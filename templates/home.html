@@ -6,10 +6,10 @@
 <img src="{% static 'images/images.jfif' %}" alt="" class="bookcover">
 {% if user.is_authenticated %}
 Hi {{user.username}}
-<p><a href="{% url 'logout' %}">Log Out</a></p>
+<p><a href="{% url 'account_logout' %}">Log Out</a></p>
 {% else %}
 Login First
-<a href="{% url 'login' %}">Login</a>
-<a href="{% url 'signup' %}">Sign Up</a>
+<a href="{% url 'account_login' %}">Login</a>
+<a href="{% url 'account_signup' %}">Sign Up</a>
 {% endif %}
 {% endblock content %}
