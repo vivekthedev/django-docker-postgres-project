@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "crispy_forms",
+    "books.apps.BooksConfig",
 ]
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 SITE_ID = 1
