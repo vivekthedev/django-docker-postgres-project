@@ -3,6 +3,9 @@
 {% block title %}Home{% endblock title %}
 {% block content %}
 <h1>Homepage</h1>
+<form action="{% url 'search' %}" method="get" class="form_inline mt-2 mt-md-0">
+    <input type="text" name="q" placeholder="Search" aria-label="Search" class="form-control mr-sm-2">
+</form>
 <img src="{% static 'images/images.jfif' %}" alt="" class="bookcover">
 {% if user.is_authenticated %}
 Hi {{user.username}}
